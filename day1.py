@@ -9,10 +9,10 @@ test_input = """\
 3   3"""
 
 
-def parse_input(input):
+def parse_input(puzzle_input: str):
     distances1 = []
     distances2 = []
-    for l in input.splitlines():
+    for l in puzzle_input.splitlines():
         d1, d2 = l.split()
         distances1.append(int(d1))
         distances2.append(int(d2))
